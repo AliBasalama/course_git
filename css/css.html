@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://tk.net/status.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1256">
+<title>تفاصيل الأستخدام </title>
+
+<meta http-equiv="refresh" content="60">
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="refresh" content="300">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" name="viewport">
+<link href="./css_files/notofont.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css_files/assets.css">
+<script language="JavaScript">
+<!--
+
+    function openLogout() {
+	if (window.name != 'hotspot_status') return true;
+        open('http://TK.NET/logout', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=280,height=250');
+	window.close();
+	return false;
+    }
+//-->
+</script>
+<script language="JavaScript">
+
+function readablizeBytes(bytes) {
+var s = ['bytes', 'kb', 'MB', 'GB', 'TB', 'PB'];
+var e = Math.floor(Math.log(bytes)/Math.log(1024));
+return (bytes/Math.pow(1024, Math.floor(e))).toFixed(2)+" "+s[e];
+}
+
+</script>
+
+<script language="JavaScript">
+
+function arabicBytes(original)
+{
+	var rv;
+	var int1 = original;
+	var GB = " جيجابايت ", MB = " ميجابايت ", KB = " كيلوبايت ", B = " بايت ";
+	if(int1 < 1024) rv = int1 + B;
+	else if(int1 < (1024 * 1024)) rv = Math.round(int1 / 1024) + KB; 
+	else if(int1 < (1024 * 1024 * 1024)) rv = Math.round(int1 / (1024 * 1024)) + MB;
+	else rv = Math.round(int1 / (1024 * 1024 * 1024)) + GB;
+	return rv;					 
+}
+</script>
+<script language="JavaScript">
+function arabicTime(original)
+{						
+	var str1 = original, remaining = original;
+	var rv = "";
+	var d_u = " يوم ", h_u = " ساعة ", m_u = " دقيقة ", s_u = " ثانية ";
+	var d = "", h = "", m = "", s = "";
+	
+	if(str1 == "") return "";
+	
+	if(str1.indexOf("d") >= 0)
+	{
+		var str = str1.split("d");
+		d = (str[0] != "") ? (str[0] + d_u) : "";
+		remaining = str[1];
+	}
+	if(str1.indexOf("h") >= 0)
+	{
+		var str = remaining.split("h");
+		h = (str[0] != "") ? (str[0] + h_u) : "";
+		remaining = str[1];
+	}
+	if(str1.indexOf("m") >= 0)
+	{
+		var str = remaining.split("m");
+		m = (str[0] != "") ? (str[0] + m_u) : "";
+		remaining = str[1];
+	}
+	if(str1.indexOf("s") >= 0)
+	{
+		var str = remaining.split("s");
+		s = (str[0] != "") ? (str[0] + s_u) : "";
+		remaining = str[1];
+	}
+	return d + h + m + s;
+}
+</script>
+<script language="JavaScript">
+
+function readablizeBytes(bytes) {
+var s = ['&#1576;&#1575;&#1610;&#1578;', '&#1603;&#1610;&#1604;&#1608;&#1576;&#1575;&#1610;&#1578;', '&#1605;&#1610;&#1580;&#1575;&#1576;&#1575;&#1610;&#1578;', '&#1580;&#1610;&#1580;&#1575;&#1576;&#1575;&#1610;&#1578;', '&#1578;&#1610;&#1585;&#1575;&#1576;&#1575;&#1610;&#1578;', 'PB'];
+var e = Math.floor(Math.log(bytes)/Math.log(1024));
+return (bytes/Math.pow(1024, Math.floor(e))).toFixed(2)+" "+s[e];
+}
+
+</script>
+
+
+
+<script type="text/javascript">
+    function delrem(){
+     document.cookie = "uname=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+   
+       }
+   </script>
+
+<style>
+
+</style>
+</head>
+<body> 
+<center>
+
+ <div class="box
+ ">
+ <center>
+
+ <form action="http://tk.net/logout" name="logout" onsubmit="return openLogout()">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <div class="section username">
+  <h4> تنبيــه</h4>
+  <h4>  </h4><h4>استخدم الانترنت في منفعتك</h4>
+  </div>
+<div class="section b">
+    <h4> وقت الجلسة :</h4>
+    <h4>
+ <script type="text/javascript">document.write(arabicTime("2m6s"));</script>2 دقيقة 6 ثانية </h4></div>
+	<div class="section e"><h4>التحميل المستخدم : </h4><h4>   <script type="text/javascript">
+                                            document.write(arabicBytes("792675"));</script>774 كيلوبايت  </h4></div>
+	<div class="section e"><h4>الرفع المستخدم : </h4><h4>   <script type="text/javascript">
+                                            document.write(arabicBytes("416323"));</script>407 كيلوبايت  </h4></div>
+  <div class="section c"><h4>الوقت المتبقي :</h4>
+  <h4 id="timeLeft">6 يوم , 13 ساعة , 34 دقيقة , 46 ثانية</h4>
+</div>  
+<div class="section remain"> <h4>التحميل المتبقي  : </h4><h4> <script type="text/javascript">var INFO="914.0 MiB";
+if(INFO=="unlimited"){document.write("مفتوح ")}else{document.write(arabicBytes(958415181))};</script>914 ميجابايت </h4> </div>
+<div class="submit"><input type="hidden" name="erase-cookie" value="on"><button type="submit">قطع الاتصال</button></div>
+
+<div class="submit"><input type="hidden" name="erase-cookie" value="on"><button onclick="return delrem();" type="submit">تسجيل بكرت اخر</button></div>
+
+   </form></center></div>  <script type="text/javascript">
+document.getElementById("timeLeft").innerHTML = "6d13h34m46s".replace("w", " أسبوع , ").replace("d", " يوم , ").replace("h", " ساعة , ").replace("m", " دقيقة , ").replace("s", " ثانية");
+</script>
+<input type="hidden" value="=uptimestatus=126=timeleftstatus=567286=downloadstatus=774.1 KiB=transferstatus=914.0 MiB="></center></body></html>
